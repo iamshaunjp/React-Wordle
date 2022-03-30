@@ -59,6 +59,19 @@ h1 {
 .row.current > div.filled {
   animation: bounce 0.2s ease-in-out forwards;
 }
+.keypad {
+  max-width: 500px;
+  margin: 20px auto;
+}
+.keypad > div {
+  margin: 5px;
+  width: 40px;
+  height: 50px;
+  background: #eee;
+  display: inline-block;
+  border-radius: 6px;
+  line-height: 50px;
+}
 
 /* keyframe animations */
 @keyframes flip {
