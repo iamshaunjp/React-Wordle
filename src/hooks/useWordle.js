@@ -52,6 +52,7 @@ const useWordle = (solution) => {
     setTurn(prevTurn => {
       return prevTurn + 1
     })
+    setCurrentGuess('')
   }
 
   // handle keyup event & track current guess
