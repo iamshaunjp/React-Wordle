@@ -30,14 +30,59 @@ h1 {
   font-size: 2.5em;
 }
 .row > div.green {
-  background: #5ac85a;
-  border-color: #5ac85a;
+  --background: #5ac85a;
+  --border-color: #5ac85a;
+  animation: flip 0.5s ease forwards;
 }
 .row > div.grey {
-  background: #a1a1a1;
-  border-color: #a1a1a1;
+  --background: #a1a1a1;
+  --border-color: #a1a1a1;
+  animation: flip 0.6s ease forwards;
 }
 .row > div.yellow {
-  background: #e2cc68;
-  border-color: #e2cc68;
+  --background: #e2cc68;
+  --border-color: #e2cc68;
+  animation: flip 0.5s ease forwards;
+}
+.row > div:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.row > div:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.row > div:nth-child(4) {
+  animation-delay: 0.6s;
+}
+.row > div:nth-child(5) {
+  animation-delay: 0.8s;
+}
+
+/* keyframe animations */
+@keyframes flip {
+  0% {
+    transform: rotateX(0);
+    
+    background: #fff;
+    border-color: #333;
+  }
+  45% {
+    transform: rotateX(90deg);
+    animation-timing-function: ease;
+    background: white;
+    border-color: #333;
+  }
+  55% {
+    transform: rotateX(90deg);
+    animation-timing-function: ease;
+    background: var(--background);
+    border-color: var(--border-color);
+    color: #eee;
+  }
+  100% {
+    transform: rotateX(0deg);
+    animation-timing-function: ease;
+    background: var(--background);
+    border-color: var(--border-color);
+    color: #eee;
+  }
 }
