@@ -61,26 +61,21 @@ h1 {
 @keyframes flip {
   0% {
     transform: rotateX(0);
-    
     background: #fff;
     border-color: #333;
   }
   45% {
     transform: rotateX(90deg);
-    animation-timing-function: ease;
     background: white;
     border-color: #333;
   }
   55% {
     transform: rotateX(90deg);
-    animation-timing-function: ease;
     background: var(--background);
     border-color: var(--border-color);
-    color: #eee;
   }
   100% {
     transform: rotateX(0deg);
-    animation-timing-function: ease;
     background: var(--background);
     border-color: var(--border-color);
     color: #eee;
